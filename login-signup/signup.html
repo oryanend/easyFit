@@ -10,29 +10,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="campoSignup">
 
-    <form class="row gy-2">
+<div class="campoSignup">
+    <form class="row gy-1 needs-validation was-validated" novalidate="" name="Cadastro">
         <div class="mb-3">
             <label for="inputUsername" class="form-label">Nome de Usuário</label>
-            <input type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp">
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="inputUsername"  aria-describedby="inputGroupPrepend" required="">
+                <div class="invalid-feedback">
+                    Digite um nome de usuário valido.
+                </div>
+            </div>
         </div>
         <div class="mb-3">
             <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="inputEmail" value="" required="">
+            <div class="valid-feedback">
+                Email valido!
+            </div>
         </div>
         <div class="mb-3">
             <label for="inputSenha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="inputSenha">
+            <input type="password" class="form-control" id="inputSenha" value="" required="">
+            <div class="valid-feedback">
+                Excelente!
+            </div>
         </div>
+
         <div class="d-grid gap-2 col-7 mx-auto">
-            <button type="submit" class="btn btn-success" id="btnEnviar">Registrar</button>
+            <button type="submit" class="btn btn-success" id="btnEnviar" onclick = "salvar(event, this)">Registrar</button>
         </div>
     </form>
     <div class="d-grid gap-2 col-7 mx-auto">
         <p id="ctaSignup">Já possui uma conta? <br>Faça o seu <a href="index.html" class="linkPag">Login!</a></p>
     </div>
-
 </div>
+
+<script src="signupApi.js"></script>
 </body>
 </html>
