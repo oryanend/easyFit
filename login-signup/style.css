@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+
+.campoLogin{
+    padding: 30px;
+    width: 450px;
+    height: 400px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.campoSignup{
+    padding: 30px;
+    width: 450px;
+    height: 450px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+p#ctaSignup{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#inputEmail, #inputSenha {
+padding: 10px
+}
+
+.linkPag{
+    color: #A2A629;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+.linkPag:hover{
+    color: #AAD11E;
+}
